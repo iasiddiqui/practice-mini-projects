@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    height: 100vh; /* Ensures the body takes the full viewport height */
+    /* margin: 0; */
+}
+#container{
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+
+}
+#container i{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.4s;
+
+}
